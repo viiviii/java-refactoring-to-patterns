@@ -1,4 +1,4 @@
-package ch06_creation.move_creation_knowledge_to_factory.parser.example;
+package ch06_creation.move_creation_knowledge_to_factory.example;
 
 public class StringParser {
     private final Parser parser;
