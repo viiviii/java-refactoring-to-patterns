@@ -25,7 +25,7 @@ public class TagNode {
     }
 
     public void addAttribute(String name, String value) {
-        attributes += " " + attribute(name, value);
+        attributes += attribute(name, value);
     }
 
     public void addValue(String value) {
@@ -72,6 +72,6 @@ public class TagNode {
     }
 
     private String attribute(String name, String value) {
-        return name + "=" + "'" + value + "'";
+        return " " + name + "=" + "'" + value + "'";
     }
 }
