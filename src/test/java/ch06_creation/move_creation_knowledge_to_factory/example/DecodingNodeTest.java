@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 class DecodingNodeTest {
 
     @Test
-    public void testDecodeAmpersand() throws Exception {
+    void testDecodeAmpersand() {
         String url = "test";
         Parser parser = new Parser();
         parser.setStringNodeDecoding(true);

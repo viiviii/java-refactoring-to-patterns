@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class CapitalCalculationTest {
 
     @Test
-    public void testTermLoanNoPayments() throws Exception {
+    void testTermLoanNoPayments() {
         //given
         double commitment = 10000;
         int riskRating = 1;
@@ -23,7 +23,7 @@ class CapitalCalculationTest {
     }
 
     @Test
-    public void testTermLoanOnePayment() throws Exception {
+    void testTermLoanOnePayment() {
         //given
         double commitment = 10000;
         int riskRating = 1;
@@ -37,7 +37,7 @@ class CapitalCalculationTest {
     }
 
     @Test
-    public void testTermLoanWithRiskAdjustedCapitalStrategy() throws Exception {
+    void testTermLoanWithRiskAdjustedCapitalStrategy() {
         // given
         CapitalStrategy riskAdjustedCapitalStrategy = new CapitalStrategyTermLoan();
         double commitment = 10000;
@@ -53,7 +53,7 @@ class CapitalCalculationTest {
     }
 
     @Test
-    public void testResolver() throws Exception {
+    void testResolver() {
         //given
         double commitment = 10000;
         double outstanding = 3;
@@ -68,7 +68,7 @@ class CapitalCalculationTest {
     }
 
     @Test
-    public void testResolverWithStrategy() throws Exception {
+    void testResolverWithStrategy() {
         //given
         CapitalStrategy strategy = new CapitalStrategyResolver();
         double commitment = 10000;
@@ -84,7 +84,7 @@ class CapitalCalculationTest {
     }
 
     @Test
-    public void testRCTL() throws Exception {
+    void testRCTL() {
         //given
         double commitment = 10000;
         double outstanding = 3;
@@ -100,7 +100,7 @@ class CapitalCalculationTest {
     }
 
     @Test
-    public void testRCTLWithStrategy() throws Exception {
+    void testRCTLWithStrategy() {
         //given
         CapitalStrategy strategy = new CapitalStrategyRCTL();
         double commitment = 10000;

@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MapperTest {
 
     @Test
-    public void testCreateAttributeDescriptors() throws Exception {
+    void testCreateAttributeDescriptors() {
         //given
         Mapper mapper = new Mapper();
 
