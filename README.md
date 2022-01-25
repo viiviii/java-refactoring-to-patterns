@@ -11,7 +11,7 @@
 
 ### Table-of-Contents
 > 💡 Markdown style 의미   
->   - 리팩터링 방향 - **목표**, ~~제거~~
+>   - 리팩터링 방향 - **목표**, _지향_, ~~제거~~
 
 | Chapter           | Contents                                                 | Code smell                              |
 |-------------------|----------------------------------------------------------|-----------------------------------------|
@@ -22,11 +22,11 @@
 |                   | Encapsulate ~~Composite~~ with **Builder**               | 기본 타입 강박관념                           |
 |                   | Inline ~~Singleton~~                                     | 게으른 클래스                               |
 | 07.simplification | **Compose Method**                                       | 긴 메서드                                  |
-|                   | Replace Conditional Logic with <u>**Strategy**</u>       | 복잡한 조건문<br> 기본 타입 강박관념<br> 긴 메서드 |
-|                   | Move Embellishment to <u>**Decorator**</u>               | 복잡한 조건문<br> 기본 타입 강박관념<br>         |
-|                   | Replace State-Altering Conditionals with <u>**State**</u>| 복잡한 조건문                               |
+|                   | Replace Conditional Logic with _**Strategy**_            | 복잡한 조건문<br> 기본 타입 강박관념<br> 긴 메서드 |
+|                   | Move Embellishment to _**Decorator**_                    | 복잡한 조건문<br> 기본 타입 강박관념<br>         |
+|                   | Replace State-Altering Conditionals with _**State**_     | 복잡한 조건문                               |
 |                   | Replace Implicit Tree with **Composite**                 | 기본 타입 강박관념                           |
-|                   | 🚧 Replace Conditional Dispatcher with <u>**Command**</u>| 거대한 클래스<br> 긴 메서드<br> Switch문       |
+|                   | 🚧 Replace Conditional Dispatcher with _**Command**_     | 거대한 클래스<br> 긴 메서드<br> Switch문       |
 | 08.generalization | Form **Template Method**                                 | 중복된 코드                                |
 | 09.protection     | Replace Type Code with Class                             | 기본 타입 강박관념                           |
 |                   | Limit Instantiation with **Singleton**                   |                                         |
