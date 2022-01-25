@@ -13,15 +13,24 @@
 > 💡 Markdown style 의미   
 >   - 리팩터링 방향 - **목표**, ~~제거~~
 
-| Chapter     | Contents                                               | Code smell        | Summary               |
-|-------------|--------------------------------------------------------|-------------------|-----------------------|
-| 06.creation | Replace Constructors with **Creation Methods**         |                   | `Loan`                |
-|             | Move Creation Knowledge to **Factory**                 | 문어발 솔루션         | `NodeFactory`         |
-|             | Encapsulate Classes with **Factory**                   | 추잡한 노출          | `AttributeDescriptor` |
-|             | Introduce Polymorphic Creation with **Factory Method** | 중복된 코드          | `AbstractBuilderTest` |
-|             | Encapsulate ~~Composite~~ with **Builder**             | 기본 타입 강박관념     | `TagBuilder`          |
-|             | Inline ~~Singleton~~                                   | 게으른 클래스         | `Console`             |
-
+| Chapter           | Contents                                                 | Code smell                              |
+|-------------------|----------------------------------------------------------|-----------------------------------------|
+| 06.creation       | Replace Constructors with **Creation Methods**           |                                         |
+|                   | Move Creation Knowledge to **Factory**                   | 문어발 솔루션                               |
+|                   | Encapsulate Classes with **Factory**                     | 추잡한 노출                                |
+|                   | Introduce Polymorphic Creation with **Factory Method**   | 중복된 코드                                |
+|                   | Encapsulate ~~Composite~~ with **Builder**               | 기본 타입 강박관념                           |
+|                   | Inline ~~Singleton~~                                     | 게으른 클래스                               |
+| 07.simplification | **Compose Method**                                       | 긴 메서드                                  |
+|                   | Replace Conditional Logic with <u>**Strategy**</u>       | 복잡한 조건문<br> 기본 타입 강박관념<br> 긴 메서드 |
+|                   | Move Embellishment to <u>**Decorator**</u>               | 복잡한 조건문<br> 기본 타입 강박관념<br>         |
+|                   | Replace State-Altering Conditionals with <u>**State**</u>| 복잡한 조건문                               |
+|                   | Replace Implicit Tree with **Composite**                 | 기본 타입 강박관념                           |
+|                   | 🚧 Replace Conditional Dispatcher with <u>**Command**</u>| 거대한 클래스<br> 긴 메서드<br> Switch문       |
+| 08.generalization | Form **Template Method**                                 | 중복된 코드                                |
+| 09.protection     | Replace Type Code with Class                             | 기본 타입 강박관념                           |
+|                   | Limit Instantiation with **Singleton**                   |                                         |
+|                   | Introduce **Null Object**                                | 복잡한 조건문<br> 중복된 코드                  |
 
 ### Note
 * 이 예제 코드는 책을 기반으로 하였으나 책에서 나오지 않은 부분은 개인의 생각대로 stub 구현되었습니다.
